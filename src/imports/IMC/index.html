@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo IMC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="bloco">
+        <h1>Cálculo IMC</h1>
+        <form>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <br>
+            <label for="sexo">Sexo: </label>
+            <select name="sexo" id="sexo">
+                <option value="null">---</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+            <br>
+            <br>
+            <label for="peso">Peso: </label>
+            <input type="text" name="peso" id="peso" placeholder="Insira seu peso...">
+            <br>
+            <br>
+            <label for="altura">Altura: </label>
+            <input type="text" name="altura" id="altura" placeholder="Insira sua altura...">
+            <br>
+            <br>
+        </form>
+        <input id="calc" type="submit" value="Calcular" class="calcular" onclick="calcular()">
+        <h3 id="final">Resultado: </h3>
+    </div>
+    <footer class="rodape">
+        <a href="formulario.html">Fale conosco</a>
+    </footer>
+</body>
+</html>

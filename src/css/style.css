@@ -1,0 +1,78 @@
+.nav_bar{
+    display: inline-flex;
+}
+ul, li{
+    align-content: end;
+    align-items: center;
+    display: flex;
+    gap: 60px;
+    list-style-type: none;
+}
+h1{
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: all 0.20s linear;
+}
+
+h1:hover {
+    text-decoration-color: black;
+}
+a{
+    color: white;
+    transition: all 0.25s linear;
+    text-decoration: none;
+    background-color: cornflowerblue;
+    border: 5px, solid rgb(79, 117, 187);
+    border-radius: 50px;
+}
+a:hover{
+    color: blue;
+    font-size: 30px;
+}
+p, #idade{
+    display: inline;
+}
+.minhaFoto{
+    border: 5px, solid black;
+    border-radius: 1000px;
+    height: 240px;
+    transition: all 0.5s linear;
+}
+.minhaFoto:hover{
+    border: solid green;
+    transform: scale(2.5) translateX(50%);
+}
+.legendaFoto{
+    color: gray;
+}
+.teste:hover{
+    cursor: pointer;
+}
+.barrinhaMedia{
+    width: 100px;
+    height: 10px;
+    border-radius: 10px;
+    margin: 5%;
+    border: medium solid black;
+    background: linear-gradient(to right, #4cf24c 0%, #33a433 50%, #ffffff 0%);
+}
+.barrinhaIniciante{
+    width: 100px;
+    height: 10px;
+    border-radius: 10px;
+    margin: 5%;
+    border: medium solid black;
+    background: linear-gradient(to right, #4cf24c 0%, #33a433 10%, #ffffff 0%);
+}
+.barrinhaMedia:hover, .barrinhaIniciante:hover{
+    transform: scale(1.5);
+}
+#button5, #button6{
+    height: 30px;
+    border-radius: 20px;
+    transition: all 100ms linear;
+}
+#button5:hover, #button6:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}

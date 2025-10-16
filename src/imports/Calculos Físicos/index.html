@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculos Físicos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body style="text-align: center;">
+    <h1>Cálculos Físicos</h1>
+    <h2>Velocidade média</h2>
+    <form class="a">
+        <h3>Δ𝑠 Deslocamento (m): </h3>
+        <input type="text" name="deslo" id="deslo" placeholder="Insira o deslocamento...">
+        <h3>Δ𝑠 Intervalo de tempo (s): </h3>
+        <input type="text" name="intervalo" id="intervalo" placeholder="Insira o intervalo...">
+        <br>
+        <br>
+        <input type="submit" value="Calcular velocidade média" onclick="velo()">
+    </form>
+    <h2>Força Resultante</h2>
+    <form class="b">
+        <h3>Massa (kg): </h3>
+        <input type="text" name="massa" id="massa" placeholder="Insira a massa..." >
+        <h3>Aceleração (m/s²): </h3>
+        <input type="text" name="acele" id="acele" placeholder="Insira a aceleração...">
+        <br>
+        <br>
+        <input type="submit" value="Calcular força resultante" onclick="forca_resul()">
+    </form>
+    <h2>Energia Cinética</h2>
+    <form class="c">
+        <h3>Massa (kg): </h3>
+        <input type="text" name="massa2" id="massa2" placeholder="Insira a massa...">
+        <h3>Velocidade (m/s): </h3>
+        <input type="text" name="velo" id="velo" placeholder="Insira a velocidade...">
+        <br>
+        <br>
+        <input type="submit" value="Calcular energia cinética" onclick="cinetica()">
+    </form>
+    <h2>Potência Mecânica</h2>
+    <form class="d">
+        <h3>Potência (W): </h3>
+        <input type="text" name="potencia" id="potencia" placeholder="Insira a potência...">
+        <h3>Tempo (s): </h3>
+        <input type="text" name="tempo" id="tempo" placeholder="Insira o tempo...">
+        <br>
+        <br>
+        <input type="submit" value="Calcular potência" onclick="potencia1()">
+    </form>
+    <h2>Pressão</h2>
+    <form class="e">
+        <h3>Força (N): </h3>
+        <input type="text" name="forca" id="forca" placeholder="Insira a força...">
+        <h3>Área (m²): </h3>
+        <input type="text" name="area" id="area" placeholder="Insira a área...">
+        <br>
+        <br>
+        <input type="submit" value="Calcular pressão" onclick="pressao()">
+    </form>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <h1>Olá, preencha seus dados para sua inscrição</h1>
+
+    <div class="tela">
+        <div class="box1">
+            <label for="nome">Nome completo*</label>
+
+            <br>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome...">
+            <br>
+            <label for="email">E-mail*</label>
+
+            <br>
+            <input type="text" name="email" id="email" placeholder="Digite seu email...">
+            <br>
+            <br>
+            <table>
+                <tr>
+                    <th>Data de Nascimento*</th>
+                    <th>Celular Principal</th>
+                </tr>
+                <tr>
+                    <th><input type="date" name="nasc" id="nasc"></th>
+                    <th><input type="text"></th>
+                </tr>
+                <tr>
+                    <th>Telefone Residencial</th>
+                    <th>Gênero</th>
+                </tr>
+                <tr>
+                    <th><input type="text"></th>
+                    <th><input type="radio" name="genero" id="genero">Masculino</th>
+                    <th><input type="radio" name="genero" id="genero">Feminino</th>
+                </tr>
+            </table>
+            <br>
+            <label for="formasIngreso">Forma de Ingresso</label>
+
+            <br>
+            <select name="formasIngreso" id="formasIngreso">
+                <option value="null">---</option>
+
+                <option value="ENEM">ENEM</option>
+
+                <option value="vest_Tradi">Vestibular tradicional</option>
+
+                <option value="vest_Simpl">Vestibular simplificado</option>
+
+                <option value="transferencia">Transferência</option>
+
+                <option value="segunda_gradu">Segunda graduação</option>
+
+                <option value="avali_conti">Avaliação continuada</option>
+
+            </select>
+
+            <br>
+            <label for="curso">Curso*</label>
+
+            <br>
+            <select name="curso" id="curso">
+                <option value="null">---</option>
+
+                <option value="ADM">Administração</option>
+
+                <option value="ADS">Análise e Desenvolvimento de Sistemas</option>
+
+                <option value="ARU">Arquitetura e Urbanismo</option>
+
+                <option value="ARV">Artes Visuais</option>
+
+                <option value="AUI">Automação Indústrial</option>
+
+                <option value="BBC">Biblioteconomia</option>
+
+                <option value="BMC">Biomedicina</option>
+
+                <option value="CAU">Ciências Aeronáuticas</option>
+
+                <option value="CCB">Ciências Contábeis</option>
+
+                <option value="CCH">Ciências Humanas</option>
+
+            </select>
+
+            <br>
+            <label for="habilita">Habilitação*</label>
+
+            <br>
+            <select name="habilita" id="habilita">
+                <option value="null">Nenhuma</option>
+
+                <option value="null">Nenhuma</option>
+
+                <option value="ACC">Autorização para Conduzir Ciclomotor</option>
+
+                <option value="CATA">Categoria A</option>
+
+                <option value="CATB">Categoria B</option>
+
+                <option value="CATC">Categoria C</option>
+
+                <option value="CATD">Categoria D</option>
+
+                <option value="CATE">Categoria E</option>
+
+            </select>
+
+            <br>
+            <label for="turno">Turno*</label>
+
+            <br>
+            <select name="turno" id="turno">
+                <option value="null">---</option>
+
+                <option value="matu">Matutino</option>
+
+                <option value="vesp">Vestertino</option>
+
+                <option value="notu">Noturno</option>
+
+            </select>
+
+            <br>
+            <label>Como deseja realizar a prova*</label>
+
+            <br>
+            <input type="radio" name="rea_pro" id="presencial">Presencial
+            <input type="radio" name="rea_pro" id="online">Online
+        </div>
+
+        <div class="box2">
+            <table>
+                <tr>
+                    <th>Data[Prova]</th>
+                    <th>Horário[Prova]</th>
+                </tr>
+                <tr>
+                    <th><input type="date" name="" id=""></th>
+                    <th><input type="text" name="horaio" id="horario"></th>
+                </tr>
+                <tr>
+                    <th>Possui algum cupom de desconto?
+                        <br>
+                        <input type="text" name="cupom" id="cupom">
+                    </th>
+                    <th><input type="button" value="Inserir cupom" class="butto" onclick="cupom()"></th>
+                </tr>
+            <tr>
+                <th>CPF*</th>
+                <th>RG*</th>
+                <th>Nacionalidade*</th>
+            </tr>
+            <tr>
+                <th><input type="text" name="CPF" id="CPF"></th>
+                <th><input type="text" name="RG" id="RG"></th>
+                <th><input type="text" name="nacio" id="nacio"></th>
+            </tr>
+            <tr>
+                <th>CEP*</th>
+                <th>Endereço*</th>
+                <th>Nº*</th>
+            </tr>
+            <tr>
+                <th><input type="text" name="CEP" id="CEP"></th>
+                <th><input type="text" name="ende" id="ende"></th>
+                <th><input type="text" name="num" id="num"></th>
+            </tr>
+            <tr>
+                <th>Complemento</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+            </tr>
+            <tr>
+                <th><input type="text" name="compl" id="compl"></th>
+                <th><input type="text" name="bairro" id="bairro"></th>
+                <th><input type="text" name="cida" id="cida"></th>
+            </tr>
+            <tr>
+                <th>Nome social?*</th>
+                <th>Necessidades especiais*</th>
+            </tr>
+            <tr>
+                <th><input type="radio" name="nome_social" id="nome_social">Sim</th>
+                <th><input type="radio" name="necess" id="nome_social">Sim</th>
+            </tr>
+            <tr>
+                <th><input type="radio" name="nome_social" id="necess">Não</th>
+                <th><input type="radio" name="necess" id="necess">Não</th>
+            </tr>
+        </table>
+        </div>
+
+    </div>
+
+    <input type="button" value="Concluir" class="butto-final" onclick="concluir()">
+</body>
+
+</html>

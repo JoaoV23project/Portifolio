@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body onload="main(), idade()" id="corpo">
+    <header style="background-color: rgb(11, 161, 111);">
+        <nav class="nav_bar">
+            <h1>MEU PORTIFÓLIO</h1>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#QuemSou">Quem sou?</a></li>
+                <li><a href="#Trabalhos">Trabalhos</a></li>
+                <li><a href="imports/IMC/formulario.html">Contato</a></li>
+                <li><span id="modo">Modo: Claro<i class="fa fa-sun-o" aria-hidden="true"></i></li>
+                <li><input type="checkbox" name="modo" id="modo" onclick="modoEscuro()"></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="border: 5px, solid blue;">
+        <table border="5px">
+            <tr>
+                <th colspan="2">
+                    <h1>Quem sou?</h1>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <img src="images/FotoParaCurriculo.jpg" alt="Foto de João" class="minhaFoto">
+                    <figcaption class="legendaFoto">Passe o mouse por cima da imagem para amplia-lá</figcaption>
+                </th>
+                <th>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meu nome é João Victor, tenho atualmete
+                    <div id="idade"></div> anos, estudo o 2º do Novo Ensino Médio no "Centro de Educação do Ensino
+                    Fundamental e Médio do SESI Jair Meneguelli - CEFEM", em parceria com o "CETAF - AJU - Centro de
+                    Educação e Tecnologia - Albano Franco", faço o curso técnico de Desenvolvimento de Sitemas. Espero
+                    um dia poder trabalhar nesta área. Dedico parte do meu tempo livre ao estudo de boas pratícas e
+                    novos conhecimentos sobre programação. Tenho uma tendênica pelo seguimento back-end, por lidar mais
+                    com dados do que designs, também me interrsso bastante pelo desenvolvimento de jogos.</p>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <h1>Habilidades</h1>
+                </th>
+            </tr>
+            <tr>
+                <th>Desenvolvedor de sistemas</th>
+                <th><input type="button" value="..." onclick="mostrar('mostrar1', 'button1', 'button2')" id="button1">
+                    <input type="button" value="Esconder" onclick="esconder('mostrar1', 'button1', 'button2')"
+                        id="button2" style="position: relative; left: 50%; transform: translateX(-50%);">
+                    <div id="mostrar1">
+                        <table style="position: relative; left: 50%; transform: translateX(-50%);">
+                            <tr>
+                                <th>HTML / CSS / Javascript: </th>
+                                <th>50%</th>
+                                <th>
+                                    <div class="barrinhaMedia"></div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>C#: </th>
+                                <th>50%</th>
+                                <th>
+                                    <div class="barrinhaMedia"></div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Python:</th>
+                                <th>10%</th>
+                                <th>
+                                    <div class="barrinhaIniciante"></div>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>Analista de dados</th>
+                <th><input type="button" value="..." id="button3" onclick="mostrar('mostrar2', 'button3', 'button4')">
+                    <input type="button" value="Esconder" onclick="esconder('mostrar2', 'button3', 'button4')"
+                        id="button4" style="position: relative; left: 50%; transform: translateX(-50%);">
+                    <div id="mostrar2">
+                        <table style="position: relative; left: 50%; transform: translateX(-50%);">
+                            <tr>
+                                <th>Coleto, crio e organizo informações em bancos de dados</th>
+                            </tr>
+                            <tr>
+                                <th>Crio relátorios e dashboards</th>
+                            </tr>
+                            <tr>
+                                <th>Gerencio vulnerabilidades em sistemas</th>
+                            </tr>
+                        </table>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <h1>Formação acadêmica</h1>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <h1 style="display: inline; color: green;">2024 <h3 style="display: inline; color: red;"> - 2026
+                        </h3>
+                        <p style="display: block;"></p>CETAF - AJU - Centro de Educação e Tecnologia - Albano
+                        Franco<br>Curso Técnico de Desenvolvimento de Sistemas</p>
+                    </h1>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <h1>Trabalhos</h1>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="button" value="Mostrar" id="button5" onclick="mostrar('trabalhos', 'button5', 'button6')">
+                    <input type="button" value="Esconder" id="button6" onclick="esconder('trabalhos', 'button5', 'button6')">
+                    <table style="border-spacing: 20px;" id="trabalhos">
+                        <tr>
+                            <th>
+                                <div>
+                                    <img src="images/1.png" alt="Trabalho sobre cálculo trabalhista">
+                                    <figcaption>Trabalho sobre cálculo trabalhista</figcaption>
+                                    <a href="imports/Calculo Trabalhista/index.html">Abrir</a>
+                                </div>
+                            </th>
+                            <th>
+                                <div>
+                                    <img src="images/2.png" alt="Cálculo IMC">
+                                    <figcaption>Trabalho sobre cálculo IMC</figcaption>
+                                    <a href="imports/IMC/index.html">Abrir</a>
+                                </div>
+                            </th>
+                            <th>
+                                <div>
+                                    <img src="images/3.png" alt="Cálculos físicos">
+                                    <figcaption>Trabalho sobre cálculos físicos</figcaption>
+                                    <a href="imports/Calculos Físicos/index.html">Abrir</a>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div>
+                                    <img src="images/4.png" alt="Formulário de inscrição">
+                                    <figcaption>Trabalho sobre formulário de inscrição</figcaption>
+                                    <a href="imports/Formulário/index.html">Abrir</a>
+                                </div>
+                            </th>
+                        </tr>
+                </th>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <h3>2025 © - João Victor</h3>
+    </footer>
+</body>
+
+</html>

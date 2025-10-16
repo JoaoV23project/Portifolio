@@ -1,0 +1,26 @@
+h1{
+    font-size: 75px;
+    color: green;
+}
+h2{
+    font-size: 50px;
+    color: brown;
+}
+h3{
+    font-size: 25px;
+}
+.a{
+    background-color: aqua;
+}
+.b{
+    background-color: burlywood;
+}
+.c{
+    background-color: chartreuse;
+}
+.d{
+    background-color: rgb(221, 65, 96);
+}
+.e{
+    background-color: fuchsia;
+}

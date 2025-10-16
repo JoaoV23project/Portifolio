@@ -1,0 +1,14 @@
+.bloco{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    border: 5px, solid blue;
+    border-radius: 50px;
+    width: 640px;
+    height: 480px;
+    color: white;
+}
+h2, input, textarea{
+    margin-left: 5%;
+}

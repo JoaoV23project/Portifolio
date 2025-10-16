@@ -1,0 +1,38 @@
+.bloco, .rodape{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15%;
+    width: 480px;
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+}
+.rodape{
+    width: 100px;
+    text-align: center;
+    background-color: gray;
+}
+body{
+    background-image: url('../image/wall.jpg');
+    background-size: cover;
+}
+h1, h3{
+    text-align: center;
+}
+label{
+    margin-left: 50px;
+    font-size: 30px;
+    font-family: Verdana;
+    font-weight: bold
+}
+input, select{
+    border: 5px, solid rgb(11, 203, 236);
+}
+.calcular{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    border-radius: 50px;
+}

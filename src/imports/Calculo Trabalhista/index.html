@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo Trabalhista</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body onchange="adicionais('adicional', 'adicional2', 'adicional3')">
+    <div class="display">
+        <h1>Calculo Trabalhista</h1>
+        <form>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Insira seu nome...">
+            <br>
+            <br>
+            <label for="quantidadeHoras">Quantidade de horas trabalhadas no mês: </label>
+            <input type="text" name="quantidadeHoras" id="quantidadeHoras" placeholder="Horas trabalhadas..." required>
+            <br>
+            <br>
+            <label for="valorHora">Valor por hora trabalhada: R$</label>
+            <input type="text" name="valorHora" id="valorHora" placeholder="Valor por hora... " required>
+            <br>
+            <br>
+            <label for="dependentes">Quantidade de dependentes: </label>
+            <input type="number" name="dependentes" id="dependentes" placeholder="Dependentes...">
+            <br>
+            <br>
+            <label for="fezHorasExtras">Fez horas extras?: </label>
+            <select name="fezHorasExtras" id="fezHorasExtras">
+                <option value="null">---</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+            <br>
+            <br>
+            <label for="outrasDeducoes">Outras deduções: R$</label>
+            <input type="text" name="outrasDeducoes" id="outrasDeducoes" placeholder="...">
+            <br>
+            <br>
+            <label for="possuiDescontos">Possui descontos?: </label>
+            <select name="possuiDescontos" id="possuiDescontos">
+                <option value="null2">---</option>
+                <option value="sim2">Sim</option>
+                <option value="nao2">Não</option>
+            </select>
+            <br>
+            <br>
+            <label for="possuiBeneficios">Possui benefícios?:</label>
+            <select name="possuiBeneficios" id="possuiBeneficios">
+                <option value="null3">---</option>
+                <option value="sim3">Sim</option>
+                <option value="nao3">Não</option>
+            </select>
+            <br>
+            <br>
+            <label for="valeTransporte">Possui vale-transporte?: </label>
+            <select name="valeTransporte" id="valeTransporte">
+                <option value="null4">---</option>
+                <option value="sim4">Sim</option>
+                <option value="nao4">Não</option>
+            </select>
+            <div id="adicional">
+                <label for="horasExtras">Quantidade de horas extras no mês: </label>
+                <input type="text" name="horasExtras" id="horasExtras" placeholder="Horas extras...">
+            </div>
+            <div id="adicional2">
+                <br>
+                <label for="descontos">Valor do desconto: R$</label>
+                <input type="text" name="descontos" id="descontos" placeholder="Descontos...">
+            </div>
+            <div id="adicional3">
+                <br>
+                <label for="beneficios">Valor do benéficio: R$</label>
+                <input type="text" name="beneficios" id="beneficios" placeholder="Beneficios...">
+            </div>
+        </form>
+        <br>
+        <input type="submit" value="Calcular" onclick="calcular()">
+        <input type="submit" value="Limpar" onclick="limpar()">
+        <br>
+        <br>
+        <div class="resultado">
+            <h4 id="resultado1">O Resultado sairá aqui</h4>
+            <h4 id="resultado2"></h4>
+            <h4 id="resultado3"></h4>
+            <h4 id="resultado4"></h4>
+            <h4 id="resultado5"></h4>
+            <h4 id="resultado6"></h4>
+            <h4 id="resultado7"></h4>
+            <h4 id="resultado8"></h4>
+            </div>
+        </div>
+</div>
+</body>
+</html>
